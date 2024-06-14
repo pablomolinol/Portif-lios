@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+:root{
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    --cor-borda-conhecimentos: rgb(95, 17, 117);
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem ;
+}
+
+#informações > div{
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+#informações > div:first-child{
+    padding: 0;
+    border-bottom: none;
+
+}
+
+#informações >div > img{
+    width: 100%;
+    border-radius: 5%;
+    border-bottom: 0;
+}
+
+main > div {
+    display: flex;
+}
+
+main >div >div{
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.info {
+    border: 3px solid var(--cor-borda-conhecimentos);
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.info > ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.info > ul > li h3{
+    display: inline-block;
+    font-size: 1.35rem;
+    margin-bottom: 5px;
+}
+
+.info >ul >li p:first-child{
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #888;
+    margin: 15px;
+}
+
+.info >ul >li p:first-child{
+    margin-top: 0;
+}
+
+#conhecimentos li{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: var(--cor-borda-conhecimentos);
+    border-radius: 2px;
+}
+
+#idiomas table{
+    width: 100%;
+}
+
+#idiomas table > thead > tr {
+    background-color: rgb(87, 9, 189);
+}
+
+#idiomas table > tbody > tr:nth-last-of-type(2n+1){    /*linhas impares*/
+    background-color: rgb(67, 9, 134);
+}
+
+#idiomas table > tbody > tr:nth-last-of-type(2n){    /*linhas pares */
+    background-color: rgb(87, 9, 189);
+}
+
+#idiomas table td {
+    text-align: center;
+}
